@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "id": "cbd-loop",
+      "path": "../routes/cbd-loop.geojson"
+    },
+    {
+      "id": "st-kilda-run",
+      "path": "../routes/st-kilda-run.geojson"
+    }
+  ]
+}
