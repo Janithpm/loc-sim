@@ -1,0 +1,24 @@
+{
+  "routes": [
+    {
+      "id": "southbank-st-kilda-osrm",
+      "path": "../routes/southbank-st-kilda-osrm.geojson"
+    }
+  ],
+  "vehicles": [
+    {
+      "slot": 1,
+      "routeId": "southbank-st-kilda-osrm",
+      "speedKph": 28,
+      "startOffsetMeters": 0,
+      "loop": false
+    },
+    {
+      "slot": 2,
+      "routeId": "southbank-st-kilda-osrm",
+      "speedKph": 34,
+      "startOffsetMeters": 1200,
+      "loop": false
+    }
+  ]
+}

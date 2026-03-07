@@ -1,0 +1,38 @@
+{
+  "routes": [
+    {
+      "id": "botanic-2km-osrm",
+      "path": "../routes/botanic-2km-osrm.geojson"
+    }
+  ],
+  "vehicles": [
+    {
+      "slot": 1,
+      "routeId": "botanic-2km-osrm",
+      "speedKph": 40,
+      "startOffsetMeters": 0,
+      "loop": true
+    },
+    {
+      "slot": 2,
+      "routeId": "botanic-2km-osrm",
+      "speedKph": 40,
+      "startOffsetMeters": 250,
+      "loop": true
+    },
+    {
+      "slot": 3,
+      "routeId": "botanic-2km-osrm",
+      "speedKph": 40,
+      "startOffsetMeters": 500,
+      "loop": true
+    },
+    {
+      "slot": 4,
+      "routeId": "botanic-2km-osrm",
+      "speedKph": 40,
+      "startOffsetMeters": 750,
+      "loop": true
+    }
+  ]
+}

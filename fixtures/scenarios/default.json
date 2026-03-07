@@ -8,5 +8,35 @@
       "id": "st-kilda-run",
       "path": "../routes/st-kilda-run.geojson"
     }
+  ],
+  "vehicles": [
+    {
+      "slot": 1,
+      "routeId": "cbd-loop",
+      "speedKph": 26,
+      "startOffsetMeters": 0,
+      "loop": true
+    },
+    {
+      "slot": 2,
+      "routeId": "st-kilda-run",
+      "speedKph": 30,
+      "startOffsetMeters": 350,
+      "loop": true
+    },
+    {
+      "slot": 3,
+      "routeId": "cbd-loop",
+      "speedKph": 24,
+      "startOffsetMeters": 650,
+      "loop": true
+    },
+    {
+      "slot": 4,
+      "routeId": "st-kilda-run",
+      "speedKph": 32,
+      "startOffsetMeters": 900,
+      "loop": true
+    }
   ]
 }

@@ -27,15 +27,33 @@ export const streamQuerySchema = z.object({
   organizationId: z.string().uuid()
 });
 
+const scenarioRouteSchema = z.object({
+  id: z.string().min(1),
+  path: z.string().min(1)
+});
+
+const scenarioVehicleSchema = z.object({
+  slot: z.number().int().positive(),
+  routeId: z.string().min(1),
+  speedKph: z.number().positive().optional(),
+  startOffsetMeters: z.number().min(0).default(0),
+  loop: z.boolean().default(true),
+  accuracyMeters: z.number().nonnegative().default(6)
+});
+
 export const scenarioSchema = z.object({
-  routes: z
-    .array(
-      z.object({
-        id: z.string().min(1),
-        path: z.string().min(1)
-      })
+  routes: z.array(scenarioRouteSchema).min(1),
+  vehicles: z
+    .array(scenarioVehicleSchema)
+    .optional()
+    .refine(
+      (vehicles) =>
+        vehicles === undefined ||
+        new Set(vehicles.map((vehicle) => vehicle.slot)).size === vehicles.length,
+      {
+        message: "vehicle slots must be unique"
+      }
     )
-    .min(1)
 });
 
 export const geoJsonRouteSchema = z.object({

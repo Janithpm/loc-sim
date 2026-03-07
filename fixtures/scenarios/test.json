@@ -1,0 +1,17 @@
+{
+  "routes": [
+    {
+      "id": "test",
+      "path": "../routes/test.geojson"
+    }
+  ],
+  "vehicles": [
+    {
+      "slot": 1,
+      "routeId": "test",
+      "speedKph": 40,
+      "startOffsetMeters": 0,
+      "loop": true
+    }
+  ]
+}
